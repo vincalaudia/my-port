@@ -29,7 +29,7 @@ const Card = ({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="relative w-[336px] h-[189px] bg-[#f8faff] rounded-[8px] overflow-hidden mb-[12px]">
+      <div className="relative w-full h-[189px] bg-[#f8faff] rounded-[8px] overflow-hidden mb-[12px]">
         {isHovered ? (
           <div
             className="w-full h-full bg-cover bg-center"
@@ -42,13 +42,10 @@ const Card = ({
             </div>
           </div>
         ) : (
-          <Image
-            src={imageUrl}
-            alt="portfolio"
-            layout="fill"
-            objectFit="contain"
-            className="object-cover"
-          />
+          <div
+            className="w-full h-full bg-cover bg-center"
+            style={{ backgroundImage: `url(${imageUrl})` }}
+          ></div>
         )}
       </div>
       <div className="flex flex-col items-start gap-[3px] relative  w-full">
