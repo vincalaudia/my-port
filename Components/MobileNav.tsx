@@ -1,4 +1,5 @@
-import { XMarkIcon } from "@heroicons/react/20/solid";
+import { IoIosClose } from "react-icons/io";
+
 import React from "react";
 
 interface Props {
@@ -23,7 +24,7 @@ const MobileNav = ({ nav, closeNav }: Props) => {
         onClick={closeNav}
         className="absolute cursor-pointer top-[2rem] right-[2rem] w-[2rem] h-[2rem] text-[#d0c8a9]"
       >
-        <XMarkIcon />
+        <IoIosClose className=" w-[3rem] h-[3rem]" />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Bars3Icon } from "@heroicons/react/20/solid";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 interface Props {
   openNav: () => void;
@@ -23,7 +23,7 @@ const Nav = ({ openNav }: Props) => {
         <div className="nav-link">Contact</div>
         <div className="nav-link">O</div>
         <div onClick={openNav}>
-          <Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-white" />
+          <RxHamburgerMenu className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-white" />
         </div>
       </div>
     </div>
