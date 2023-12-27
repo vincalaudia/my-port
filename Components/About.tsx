@@ -8,7 +8,7 @@ const About = () => {
       <div className="grid grid-cols-1 my-[8rem] md:grid-cols-2 w-[80%] mx-auto gap-[1rem] md:gap-[0px] items-center">
         <div>
           <h1 className="text-[30px] font-bold text-[#adc5cd] md-[1rem]">
-            A BIT ABOUT ME
+            A BIT ABOUT ME!
           </h1>
           <h2 className="text-[25px] md:text-[35px] lg:text-[40px] md:leading-[3rem] leading-[2rem] font-bold text-white">
             Change is the Only <span className="text-[#EADCBA]"> Constant</span>
